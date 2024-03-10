@@ -1,0 +1,59 @@
+/* Homepage.css */
+.homepage {
+  height: 100vh;
+  width: 160vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(to right top, #ff8a00, #e52e71, #9b36b7, #515ecf); */
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.header h1 {
+  margin-bottom: 2rem;
+  font-size: 5rem;
+}
+
+.buttons button {
+  margin: 0 1rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  background-color: #ff8a00;
+  color: white;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #e52e71;
+}
