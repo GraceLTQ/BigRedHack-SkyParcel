@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./index.css"; // Ensure this path is correct
+import "../styles/index.css"; // Ensure this path is correct
 import { useNavigate } from "react-router-dom";
 
 // Firebase imports - Modular SDK

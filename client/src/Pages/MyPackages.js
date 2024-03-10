@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MyPackages.css"; // Ensure you have this CSS file
+import "../styles/MyPackages.css"; // Ensure you have this CSS file
 import packageImage from "./package.png"; // Adjust the path to where your image is stored
 import { useNavigate } from "react-router-dom";
 

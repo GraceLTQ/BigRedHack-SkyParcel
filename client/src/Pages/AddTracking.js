@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./AddTracking.css";
+import "../styles/AddTracking.css";
 
 function AddTracking() {
   const [trackingNumber, setTrackingNumber] = useState("");
@@ -54,7 +54,7 @@ function AddTracking() {
           <div className="burger-bar"></div>
         </div>
         <div className={`menu ${isMenuOpen ? "show" : ""}`}>
-        <a href="/homepage">Home</a>
+          <a href="/homepage">Home</a>
           <div className="user-menu" onClick={toggleDropdown}>
             User Page
             {showDropdown && (

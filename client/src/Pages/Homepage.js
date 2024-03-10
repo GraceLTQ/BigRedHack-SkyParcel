@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Homepage.css";
-import "./MyPackages.css";
+import "../styles/Homepage.css";
+import "../styles/MyPackages.css";
 
 function Homepage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
