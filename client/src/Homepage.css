@@ -1,6 +1,6 @@
 /* Homepage.css */
 .homepage {
-  height: 100vh;
+  height: 90vh;
   width: 160vh;
   display: flex;
   flex-direction: column;
@@ -13,13 +13,11 @@
 }
 
 .navigation {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -28,14 +26,59 @@
   color: white;
 }
 
-.menu a {
-  color: white;
-  text-decoration: none;
-  margin: 0 0rem;
+.burger-menu {
+  display: none; /* Hidden by default */
+  cursor: pointer;
 }
 
-.menu a:hover {
-  text-decoration: underline;
+.burger-menu .burger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333; /* Color for the burger bars */
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+/* Toggle show class for menu */
+.menu.show {
+  display: flex;
+}
+
+/* Default menu styling */
+.menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 60px; /* Adjust based on the height of your navigation */
+}
+
+.menu a,
+.user-menu {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block; /* Stack items vertically */
+}
+
+.menu a, .user-menu {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none; /* Hide burger and show menu on larger screens */
+  }
+
+  .menu {
+    display: flex; /* Show menu inline on larger screens */
+    position: relative; /* Reset position */
+    top: auto;
+    right: auto;
+    flex-direction: row;
+  }
 }
 
 .header h1 {
