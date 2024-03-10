@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
+import "./MyPackages.css";
 
 function Homepage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  let navigate = useNavigate();
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
 
   const goToMyPackages = () => {
     navigate("/mypackages"); // Use the route path you defined for MyPackages
@@ -29,8 +38,26 @@ function Homepage() {
           <div className="burger-bar"></div>
         </div>
         <div className={`menu ${isMenuOpen ? "show" : ""}`}>
-          <a href="/about-us">About Us</a>
-          <div className="user-menu">User Page</div>
+          <a href="/homepage">Home</a>
+          <div className="user-menu" onClick={toggleDropdown}>
+            User Page
+            {showDropdown && (
+              <div className="dropdown">
+                <div
+                  className="dropdown-item"
+                  onClick={() => handleNavigation("/mypackages")}
+                >
+                  My Packages
+                </div>
+                <div
+                  className="dropdown-item"
+                  onClick={() => handleNavigation("/addtracking")}
+                >
+                  Add Tracking
+                </div>
+              </div>
+            )}
+          </div>
           <a href="/login">Login</a>
           <a href="/search">
             <i className="search-icon">🔍</i>

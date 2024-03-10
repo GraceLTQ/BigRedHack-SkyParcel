@@ -1,5 +1,23 @@
 /* AddTracking.css */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .add-tracking {
+  height: 90vh;
+  width: 160vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(to right top, #ff8a00, #e52e71, #9b36b7, #515ecf); */
+  color: white;
+  text-align: center;
   font-family: 'Arial', sans-serif;
   padding: 20px;
 }
@@ -11,9 +29,10 @@
 
 .tracking-form input {
   margin-bottom: 10px;
+  height: 100%;
   width: 100%;
   padding: 8px;
-  font-size: 16px;
+  font-size: 40px;
 }
 
 .tracking-form button {
@@ -21,15 +40,18 @@
   background-color: #f8d7da;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .on-the-way-packages {
   margin-top: 20px;
+  font-size: 30px;
 }
 
 .on-the-way-packages h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 35px;
 }
 
 .on-the-way-packages ul {
@@ -38,7 +60,7 @@
 }
 
 .on-the-way-packages li {
-  background: #f0f0f0;
+  /* background: #999898; */
   margin-bottom: 5px;
   padding: 10px;
   border-radius: 4px;
