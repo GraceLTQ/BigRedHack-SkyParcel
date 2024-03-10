@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
 
 function Homepage() {
@@ -6,6 +7,16 @@ function Homepage() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  let navigate = useNavigate();
+
+  const goToMyPackages = () => {
+    navigate("/mypackages"); // Use the route path you defined for MyPackages
+  };
+
+  const goToAddTracking = () => {
+    navigate("/addtracking"); // Use the route path you defined for MyPackages
   };
 
   return (
@@ -31,8 +42,8 @@ function Homepage() {
           <h1>Your Best Delivery Solution</h1>
         </header>
         <div className="buttons">
-          <button>My Packages</button>
-          <button>Add a Tracking</button>
+          <button onClick={goToMyPackages}>My Packages</button>
+          <button onClick={goToAddTracking}>Add a Tracking</button>
         </div>
       </div>
     </div>

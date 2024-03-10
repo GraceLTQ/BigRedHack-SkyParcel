@@ -1,0 +1,45 @@
+/* AddTracking.css */
+.add-tracking {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.tracking-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tracking-form input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.tracking-form button {
+  padding: 10px 20px;
+  background-color: #f8d7da;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.on-the-way-packages {
+  margin-top: 20px;
+}
+
+.on-the-way-packages h2 {
+  margin-bottom: 10px;
+}
+
+.on-the-way-packages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.on-the-way-packages li {
+  background: #f0f0f0;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
